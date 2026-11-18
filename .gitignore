@@ -1,0 +1,15 @@
+# OS / サムネイルの残骸
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 編集物・一時ファイル
+*.tmp
+*.bak
+*.orig
+*.log
+__pycache__/
+
+# スクショの元画像（切り抜いた成果物だけを公開する）
+元画像/
+shots/
