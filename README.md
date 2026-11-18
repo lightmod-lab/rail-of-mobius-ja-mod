@@ -3,19 +3,19 @@
 Steam 版 **『湛藍牢籠 Rail of Möbius』**（湛蓝牢籠 / Rail of Möbius ・ 開発/発行: PHOSEPO ・ AppID 1479500）の
 **本文とUIを日本語で読めるようにする非公式MOD**です。
 
-**ZIPを解凍してゲームフォルダに展開するだけ**で適用できます。**追加ファイルのみ**で動き、
-**削除すれば完全に元に戻ります**。ゲーム本体のファイル（シナリオ・UI・フォント）は一切書き換えません。
+**下の「使い方」どおり、`導入ファイル` の中身をゲームフォルダに貼り付けるだけ**で適用できます。
+追加ファイルだけで動き、**削除すれば完全に元に戻ります**。ゲーム本体のファイル（シナリオ・UI・フォント）は一切書き換えません。
 実行中にメモリ上だけ差し替えます。
 
 | 項目 | 内容 |
 |---|---|
 | 対応 | Steam 版『湛藍牢籠 Rail of Möbius』（確認ビルド buildid 13230446 / Unity 2018.2 Mono・64bit） |
-| BepInEx | **5.4.22（x64）を同梱済み** — 別途ダウンロードは不要 |
-| 導入 | 解凍した `BepInEx` フォルダ・`version.dll`・`doorstop_config.ini` をゲームフォルダに展開するだけ |
+| 導入 | `導入ファイル` の中身をゲームフォルダにコピーするだけ（1回貼り付けるだけ） |
+| 実行基盤 | **BepInEx 5.4.22・UnityDoorstop を同梱済み** — 別途ダウンロードは不要 |
 | ゲーム内言語 | 英語・簡体字・繁体字の**どれを選んでも日本語が表示**されます（下記） |
-| 元に戻す | 追加された `BepInEx` フォルダ・`version.dll`・`doorstop_config.ini` を削除するだけ |
-| ファイル | MOD本体3個（約1.2MB）＋ 同梱の BepInEx 一式（約1.1MB） |
-| 版 | MOD v0.3.0（2026-11-18）/ 公開版 1 |
+| 元に戻す | 追加された `BepInEx`・`version.dll`・`doorstop_config.ini` を削除するだけ |
+| 重さ | 合計 約2.3MB（MOD本体 約1.2MB ＋ 実行基盤 約1.1MB） |
+| 版 | MOD v0.3.0（2026-11-18） |
 
 適用すると、本文はこのように日本語で表示されます。
 
@@ -26,12 +26,11 @@ Steam 版 **『湛藍牢籠 Rail of Möbius』**（湛蓝牢籠 / Rail of Möbiu
 ## ダウンロード
 
 **方法1（かんたん）** — このページ右上の **`Code` → `Download ZIP`**（コード → ZIPでダウンロード）
-→ 解凍してできるフォルダの中にある **`BepInEx`・`version.dll`・`doorstop_config.ini` の3つ**を、下の「使い方」どおりゲームフォルダに展開するだけで完了です。
+→ 解凍すると `導入ファイル` フォルダが入っています。使い方は下のとおり、**その中身をゲームフォルダに貼るだけ**です。
 
-**方法2（MOD本体だけ欲しい場合）** — [`版0.3.0`](版0.3.0/) フォルダの3個
+**方法2（MOD本体だけ欲しい場合・既に BepInEx を使っている方）** — [`版0.3.0`](版0.3.0/) フォルダの3個
 （[`MobiusJP.dll`](版0.3.0/MobiusJP.dll)・[`jp_grid.tsv`](版0.3.0/jp_grid.tsv)・[`jp_ui.tsv`](版0.3.0/jp_ui.tsv)）
-を開いて、右上の **ダウンロードボタン**（Download raw file）を押す。
-既に BepInEx を導入済みの方は、この3個を `BepInEx\plugins\` にコピーするだけで適用できます。
+を開いて、右上の **ダウンロードボタン**（Download raw file）を押す → ご自身の `BepInEx\plugins\` に置いてください。
 
 > ZIP は GitHub が自動で作るものです。中身はこのページに並んでいるファイルと同じです。
 
@@ -42,7 +41,7 @@ Windows では、ダウンロードした ZIP を開くときに次の警告が�
 ![Windowsのセキュリティ警告](注意_セキュリティ警告.png)
 
 これは**インターネットからダウンロードしたファイルに Windows が付ける印**によるもので、
-中身が危険という意味ではありません。本MODの中身は **テキストの表2個と、OSS（BepInEx など）の小さな DLL 群だけ**で、
+中身が危険という意味ではありません。本MODの中身は **テキストの表2個と、小さな DLL 群だけ**で、
 インストーラ形式のプログラムは入っていません（DLL もテキスト表も、そのまま目視・確認できます）。
 
 - そのまま **「OK」** を押して解凍して構いません。一度解凍すれば、そのあとは警告は出ません。
@@ -56,28 +55,35 @@ Windows では、ダウンロードした ZIP を開くときに次の警告が�
 Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック → **管理** → **ローカルファイルを閲覧**
 （`RailOfMobius.exe` がある場所です）
 
-### 2. 解凍したものをそのまま展開する
+### 2. `導入ファイル` の中身を、そこに貼り付ける
 
-ダウンロードしたZIPを解凍し、中にある次の3つを **`RailOfMobius.exe` と同じ場所**に置いてください
-（フォルダごとドラッグ＆ドロップで構いません）。
+ZIPを解凍し、**`導入ファイル` フォルダの中身を開いて、入っている3つをそのままゲームフォルダに貼り付けてください**
+（`導入ファイル` フォルダ自体ではなく、**中身**をコピーします）。
+
+```
+導入ファイル\
+ ├─ BepInEx\
+ │   ├─ core\      … 実行基盤（同梱済み・別途ダウンロード不要）
+ │   ├─ plugins\   … MOD本体の3ファイル（MobiusJP.dll / jp_grid.tsv / jp_ui.tsv）
+ │   └─ LICENSES\  … 同梱ファイルのライセンス文
+ ├─ version.dll
+ └─ doorstop_config.ini
+```
+
+貼り付け後は、ゲームフォルダが次のようになっていれば正解です。
 
 ```
 （ゲームフォルダ）\
  ├─ BepInEx\
- │   ├─ core\      … 同梱の BepInEx 5.4.22（別途ダウンロード不要）
- │   ├─ plugins\   … MOD本体の3ファイル
- │   │    ├─ MobiusJP.dll      … 差し替えを行うプラグイン
- │   │    ├─ jp_grid.tsv       … 本文・名札の日本語テーブル（1.2MB・削除しないこと）
- │   │    └─ jp_ui.tsv         … メニューなどのUI置換テーブル
- │   └─ patchers\
- ├─ version.dll            … BepInEx をゲームに読み込ませる扉（Doorstop 3.4.0）
- └─ doorstop_config.ini
+ ├─ version.dll
+ ├─ doorstop_config.ini
+ ├─ RailOfMobius.exe          … 変更していません
+ └─ RailOfMobius_Data\        … 変更していません
 ```
 
 > ゲーム本体のファイルは**触らないでください**。追加するのは上の3つだけです。
-> ⚠ このゲームでは、BepInEx 公式ZIPに入っている `winhttp.dll` の名前ままでは**起動しません**（実測: ログすら出ない）。
-> 本MODでは**ファイル名を `version.dll` に変えて同梱してあります**ので、そのまま展開すれば大丈夫です。
-> 他のMODや BepInEx をすでに入れている方は、`plugins\` の3ファイルだけをコピーしてください。
+> 他のMODや BepInEx をすでに入れている方は、`BepInEx\plugins\` の3ファイルだけをコピーしてください
+> （同名の `version.dll` がある場合は、上書きせずそのままにしておいてください）。
 
 ### 3. ゲームを起動する
 
@@ -105,8 +111,8 @@ Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック →
 
 ゲームフォルダから **`BepInEx` フォルダ・`version.dll`・`doorstop_config.ini` を削除**するだけです。元の状態に戻ります。
 
+- 本文だけ元に戻したい場合は、`BepInEx\plugins\` の3ファイル（`MobiusJP.dll`・`jp_grid.tsv`・`jp_ui.tsv`）を削除してください。
 - 削除し忘れても、Steam の「プロパティ → インストール済みファイル → ゲームファイルの整合性を確認」で元に戻せます（MODも消えます）。
-- 本文だけ元に戻したい場合は、`BepInEx\plugins\` の3個を削除してください（`BepInEx` 自体は残ります）。
 
 ---
 
@@ -176,24 +182,21 @@ Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック →
 
 ---
 
-## 同梱物とそのライセンス
+## 同梱ファイルとそのライセンス
 
-本MODには、翻訳データ（`jp_grid.tsv` / `jp_ui.tsv`）とプラグイン（`MobiusJP.dll`）のほか、
-次のOSSをそのままの形で同梱しています。**ゲーム本体のファイルは含まれていません。**
+ゲームフォルダに貼る `導入ファイル` には、翻訳データとプラグインのほか、実行基盤となるOSSを含めています。**ゲーム本体のファイルは含まれていません。**
 
-| 同梱ファイル | 版（実測） | ライセンス |
+| 同梱ファイル | 版 | ライセンス |
 |---|---|---|
-| `BepInEx\core\BepInEx.dll` ほか | BepInEx 5.4.22.0（© Bepis / BepInEx Team） | **LGPL-2.1** or later → [`LICENSES/LGPL-2.1.txt`](LICENSES/LGPL-2.1.txt) |
+| `BepInEx\core\BepInEx.dll` ほか | BepInEx 5.4.22.0（© Bepis / BepInEx Team） | **LGPL-2.1** → [`LICENSES/LGPL-2.1.txt`](導入ファイル/LICENSES/LGPL-2.1.txt) |
 | `version.dll` / `doorstop_config.ini` | UnityDoorstop 3.4.0.0（© bbepis） | **LGPL-2.1** → 同上 |
-| `0Harmony.dll` / `0Harmony20.dll` | Harmony 2.9.0.0（© Andreas Pardeike） | MIT → [`LICENSES/MIT-THIRD-PARTY.txt`](LICENSES/MIT-THIRD-PARTY.txt) |
-| `Mono.Cecil*.dll` | 0.10.4.0（© Jb Evain / Novell） | MIT → 同上 |
-| `MonoMod.RuntimeDetour.dll` / `MonoMod.Utils.dll` | 22.1.29.1（© 0x0ade） | MIT → 同上 |
+| `0Harmony.dll` / `0Harmony20.dll` | Harmony 2.9.0.0（© Andreas Pardeike） | MIT → [`LICENSES/MIT-THIRD-PARTY.txt`](導入ファイル/LICENSES/MIT-THIRD-PARTY.txt) |
+| `Mono.Cecil*.dll` | Mono.Cecil 0.10.4.0（© Jb Evain / Novell） | MIT → 同上 |
+| `MonoMod.RuntimeDetour.dll` / `MonoMod.Utils.dll` | MonoMod 22.1.29.1（© 0x0ade） | MIT → 同上 |
 
-- **加えた変更の明示**: BepInEx 公式の `winhttp.dll` を、**ファイル名だけ `version.dll` に変更**して同梱しています（中身は無変更）。理由は上記のとおり、このゲームでは `winhttp.dll` のままでは起動しないためです。それ以外のファイル内容は変更していません。
-- **ソースコードの入手先**（LGPL-2.1 に対応）: [BepInEx](https://github.com/BepInEx/BepInEx)（タグ v5.4.22）／[UnityDoorstop](https://github.com/NeighTools/UnityDoorstop)／[Harmony](https://github.com/pardeike/Harmony)／[Mono.Cecil](https://github.com/jbevain/cecil)／[MonoMod](https://github.com/MonoMod/MonoMod)。
-  入手できない場合は [Issues](/issues) にご連絡ください。同梱した二进制と同じファイルの写しをお渡しします。
-- **同梱した BepInEx の出所（正直な注記）**: 実機検証に使った導入済みコピー（DLL の VersionInfo = 5.4.22.0 を実測確認）からそのまま複製しました。公式リリースZIPとのバイト一致は、この作業環境から GitHub へHTTPS接続できなかったため**未検証**です。公式版を使いたい場合は [v5.4.22 のリリース](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.22) から `BepInEx_x64_5.4.22.0.zip` を展開してください（同じ場所に入ります）。
-- 一覧と同梱物の詳細は [`LICENSES/同梱物一覧.md`](LICENSES/同梱物一覧.md) に置いてあります。
+- **加えた変更**: BepInEx 公式のパッケージで `winhttp.dll` という名前のファイルを、**名前だけ `version.dll` に変えて**入れています（中身は無変更）。このゲームでは `winhttp.dll` の名前のままでは実行基盤が起動しないためです（実測）。それ以外のファイル内容は変更していません。
+- **ソースコードの入手先**: [BepInEx](https://github.com/BepInEx/BepInEx)（v5.4.22）／[UnityDoorstop](https://github.com/NeighTools/UnityDoorstop)／[Harmony](https://github.com/pardeike/Harmony)／[Mono.Cecil](https://github.com/jbevain/cecil)／[MonoMod](https://github.com/MonoMod/MonoMod)。入手できない場合は [Issues](/issues) にご連絡ください。同梱しているものと同じファイルの写しをお渡しします。
+- 一覧の詳細は [`LICENSES/同梱物一覧.md`](導入ファイル/LICENSES/同梱物一覧.md) に置いてあります。
 
 ---
 
@@ -205,8 +208,8 @@ Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック →
   - `jp_ui.tsv` にはメニューなどの短いUI文言（79語）が原文表記で含まれています。
 - ゲームの著作権は **PHOSEPO** に帰属します。掲載しているゲーム画面は、説明のための**引用**です（© PHOSEPO）。
 - **翻訳データと本MODの再配布・販売は禁止**します（他人に配る形での改変・翻訳の二次利用もご遠慮ください）。
-  ただし **ご自身で使うための改変**（表記の変更・自分で読むための編集）や、**正常に動くようにするための解析・デバッグ**は妨げません。
-- 同梱した BepInEx / Doorstop / Harmony / Mono.Cecil / MonoMod は、上記の各作者氏のライセンス条件のままで配布しています。
+  ただし**ご自身で使うための改変**（表記の変更・自分で読むための編集）や、**正常に動くようにするための解析・デバッグ**は妨げません。
+- 同梱した BepInEx / UnityDoorstop / Harmony / Mono.Cecil / MonoMod は、それぞれ作者氏のライセンス条件のままで配布しています。
 - 自己責任でご利用ください。本MODの使用によって生じた損害について作者は責任を負いません。
 
 ---
@@ -225,10 +228,10 @@ Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック →
 
 - 翻訳・実装：個人によるファンメイド翻訳（機械翻訳を下訳に使用し、原文照合と全文目視校正で仕上げています）
 - 原作：PHOSEPO『湛藍牢籠 Rail of Möbius』
-- 表示基盤（同梱）: [BepInEx 5.4.22](https://github.com/BepInEx/BepInEx)（LGPL-2.1）・[UnityDoorstop 3.4.0](https://github.com/NeighTools/UnityDoorstop)（LGPL-2.1）・[Harmony](https://github.com/pardeike/Harmony)（MIT）・[Mono.Cecil](https://github.com/jbevain/cecil)（MIT）・[MonoMod](https://monomod.dev/)（MIT）
+- 実行基盤（同梱）: [BepInEx 5.4.22](https://github.com/BepInEx/BepInEx)（LGPL-2.1）・[UnityDoorstop 3.4.0](https://github.com/NeighTools/UnityDoorstop)（LGPL-2.1）・[Harmony](https://github.com/pardeike/Harmony)（MIT）・[Mono.Cecil](https://github.com/jbevain/cecil)（MIT）・[MonoMod](https://monomod.dev/)（MIT）
 
 ---
 
 ## 更新履歴
 
-- **MOD v0.3.0 / 公開版1**（2026-11-18）初の一般公開版。本文13,338セル・UI79語・名札を日本語化。全文の通読校了と実機プレイでの是正を反映済み。BepInEx 5.4.22 と Doorstop を同梱（展開するだけで使える形にしました）。
+- **v0.3.0**（2026-11-18）初の一般公開版。本文13,338セル・UI79語・名札を日本語化。全文の通読校了と実機プレイでの是正を反映済み。実行基盤（BepInEx・UnityDoorstop）を同梱し、`導入ファイル` を貼り付けるだけで入る形にしました。
