@@ -1,6 +1,6 @@
-# 湛藍牢籠 Rail of Möbius 日本語化MOD
+# 留紺の牢籠 Rail of Möbius 日本語化MOD
 
-Steam 版 **『湛藍牢籠 Rail of Möbius』**（湛蓝牢籠 / Rail of Möbius ・ 開発/発行: PHOSEPO ・ AppID 1479500）の
+Steam 版 **『留紺の牢籠 Rail of Möbius』**（繁体字原名: 湛藍牢籠 ／ 簡体字: 湛蓝牢笼 ・ 開発/発行: PHOSEPO ・ AppID 1479500）の
 **本文とUIを日本語で読めるようにする非公式MOD**です。
 
 **下の「使い方」どおり、`導入ファイル` の中身をゲームフォルダに貼り付けるだけ**で適用できます。
@@ -9,7 +9,7 @@ Steam 版 **『湛藍牢籠 Rail of Möbius』**（湛蓝牢籠 / Rail of Möbiu
 
 | 項目 | 内容 |
 |---|---|
-| 対応 | Steam 版『湛藍牢籠 Rail of Möbius』（確認ビルド buildid 13230446 / Unity 2018.2 Mono・64bit） |
+| 対応 | Steam 版『留紺の牢籠 Rail of Möbius』（確認ビルド buildid 13230446 / Unity 2018.2 Mono・64bit） |
 | 導入 | `導入ファイル` の中身をゲームフォルダにコピーするだけ（1回貼り付けるだけ） |
 | 実行基盤 | **BepInEx 5.4.22・UnityDoorstop を同梱済み** — 別途ダウンロードは不要 |
 | Steam の言語 | **简体中文** に設定してください（English のままだと日本語が表示されません／手順1） |
@@ -53,7 +53,7 @@ Windows では、ダウンロードした ZIP を開くときに次の警告が�
 
 ### 1. Steam の言語を **简体中文** にする
 
-Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック → **プロパティ** → **一般** → **言語** を **简体中文** に変更します。
+Steam ライブラリで『留紺の牢籠 Rail of Möbius』を右クリック → **プロパティ** → **一般** → **言語** を **简体中文** に変更します。
 
 ![Steamのプロパティを開く](導入手順1_Steamプロパティを開く.png)
 
@@ -64,7 +64,7 @@ Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック →
 
 ### 2. ゲームのフォルダを開く
 
-Steam ライブラリで『湛藍牢籠 Rail of Möbius』を右クリック → **管理** → **ローカルファイルを閲覧**
+Steam ライブラリで『留紺の牢籠 Rail of Möbius』を右クリック → **管理** → **ローカルファイルを閲覧**
 （`RailOfMobius.exe` がある場所です）
 
 ### 3. `導入ファイル` の中身を、そこに貼り付ける
@@ -252,7 +252,7 @@ MODを入れた状態と抜いた状態の両方でセーブデータを使っ�
 ## クレジット
 
 - 翻訳・実装：個人によるファンメイド翻訳（**LLMに原文から直接日本語訳を生成させ**、原文とのセル単位の機械照合と、全文の目視通読・実機での校正で仕上げています）
-- 原作：PHOSEPO『湛藍牢籠 Rail of Möbius』
+- 原作：PHOSEPO『留紺の牢籠 Rail of Möbius』（繁体字原名: 湛藍牢籠 ／ 簡体字: 湛蓝牢笼）
 - 実行基盤（同梱）: [BepInEx 5.4.22](https://github.com/BepInEx/BepInEx)（LGPL-2.1）・[UnityDoorstop 3.4.0](https://github.com/NeighTools/UnityDoorstop)（LGPL-2.1）・[Harmony](https://github.com/pardeike/Harmony)（MIT）・[Mono.Cecil](https://github.com/jbevain/cecil)（MIT）・[MonoMod](https://monomod.dev/)（MIT）
 
 ---
