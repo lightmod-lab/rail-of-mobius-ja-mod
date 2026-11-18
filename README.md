@@ -99,16 +99,8 @@ ZIPを解凍し、**`導入ファイル` フォルダの中身を開いて、入
 
 ### 4. ゲームを起動する
 
-そのまま起動して、`BepInEx\LogOutput.log` に次の2行が出ていれば有効です。
-
-```
-[Info   :   BepInEx] Loading [MobiusJP 0.3.0]
-[Info   :  MobiusJP] MobiusJP: grid patch finished. applied=26522 matched=13338/13338 passes=6
-```
-
-`matched=13338/13338` が「日本語テーブルの全セルが正しく当たった」という印です。
-
-**Steam の言語は简体中文にしてください**（手順1）。English の設定のままでは、日本語は表示されません。
+そのまま起動すれば、本文・話者名札・設定画面が日本語で表示されます。
+**Steam の言語は简体中文**（手順1）にしてください。English の設定のままでは、日本語は表示されません。
 
 ### 設定（任意）
 
@@ -131,10 +123,10 @@ ZIPを解凍し、**`導入ファイル` フォルダの中身を開いて、入
 
 1. **Steam の言語が简体中文になっていますか**（手順1）。English のままだと日本語は表示されません
 2. ゲームフォルダに `BepInEx`・`version.dll`・`doorstop_config.ini` の3つがそろっていますか
-3. `BepInEx\LogOutput.log` に `Loading [MobiusJP 0.3.0]` と `matched=13338/13338` の行がありますか
-   - `Loading` の行が無い → BepInEx が読み込まれていません。`version.dll` が公式パッケージの `winhttp.dll` という名前のままだと、このゲームでは BepInEx が起動しません（本配布物は `version.dll` になっています）
-   - `matched=` の数値が 13338 より小さい → Steam のアップデートでゲーム内部の表示位置が変わった可能性があります。[Issues](/issues) にご連絡ください
+3. `version.dll` が `winhttp.dll` という名前のままになっていませんか（このゲームでは `version.dll` でないと BepInEx が起動しません。本配布物は `version.dll` になっています）
 4. `BepInEx\plugins\` に `MobiusJP.dll`・`jp_grid.tsv`・`jp_ui.tsv` の3つがありますか（`jp_grid.tsv` は1.2MBあります。削除しないでください）
+
+まだ直らない場合や、本文の一部だけが中国語のまま残る場合は [Issues](/issues) にご連絡ください（Steam のアップデートでゲーム内部の表示位置が変わった可能性があります）。
 
 ---
 
