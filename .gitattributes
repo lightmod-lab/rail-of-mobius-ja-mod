@@ -1,0 +1,6 @@
+# 配布ファイルは改行を変換しない（実機で確認したバイト列のまま届くように）
+*.tsv -text
+*.dll binary
+*.png binary
+*.jpg binary
+*.jpeg binary
